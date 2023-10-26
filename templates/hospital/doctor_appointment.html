@@ -1,0 +1,107 @@
+{% extends 'hospital/doctor_base.html' %}
+{% load static %}
+{% block content %}
+<br><br>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <link href="http://netdna.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+
+  <style type="text/css">
+   a {
+      text-decoration: none;
+      color: #fff;
+      transition: all 0.3s ease-in-out;
+    }
+
+    .menu {
+      top: 50px;
+    }
+
+    h6 {
+      color: #fff;
+    }
+
+    .card {
+      border-radius: 5px;
+      box-shadow: 0 1px 2.94px 0.06px rgba(4, 26, 55, 0.16);
+      border: none;
+      margin-bottom: 30px;
+      transition: all 0.3s ease-in-out;
+      background: #fff;
+    }
+
+    .card:hover {
+      box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.15);
+      transform: translateY(-5px);
+    }
+
+    .card-block {
+      padding: 25px;
+    }
+
+
+
+    .appointment-booking {
+      background: linear-gradient(45deg, #FF0101, #AB0000);
+    }
+
+    .appointment-delete {
+      background: linear-gradient(45deg, #FF0101, #AB0000);
+    }
+
+    .appointment-icon {
+      text-align: center;
+      font-size: 50px;
+      margin-bottom: 20px;
+    }
+
+    .appointment-icon i {
+      color: #fff;
+      transition: all 0.3s ease-in-out;
+    }
+
+    .appointment-title {
+      text-align: center;
+      font-size: 24px;
+      margin-bottom: 0;
+    }
+
+    .appointment-booking:hover .appointment-icon i {
+      transform: rotate(45deg);
+    }
+
+    .appointment-delete:hover .appointment-icon i {
+      transform: scale(1.2);
+    }
+  </style>
+</head>
+
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+  <article class="col-md-4 col-xl-4">
+      <div class="card appointment-booking">
+        <div class="card-block">
+          <a href="/doctor-view-appointment">
+            <h2 class="appointment-icon"><i class="fas fa-calendar f-left"></i></h2>
+            <h3 class="appointment-title">Book Appointment</h3>
+          </a>
+        </div>
+      </div>
+    </article>
+
+    <article class="col-md-4 col-xl-4">
+      <div class="card appointment-delete">
+        <div class="card-block">
+          <a href="/doctor-delete-appointment">
+            <h2 class="appointment-icon"><i class="fas fa-eject f-left"></i></h2>
+            <h3 class="appointment-title">Delete Appointment</h3>
+          </a>
+        </div>
+      </div>
+    </article>
+
+<br><br><br><br><br><br><br>
+{% endblock content %}

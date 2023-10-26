@@ -1,0 +1,51 @@
+{% extends 'hospital/homebase.html' %}
+
+{% block content %}
+<style>
+  body{
+     background_color: #fff;
+  }
+  p{
+    font-family: 'Montserrat', sans-serif;
+    color: #12478f;
+
+  }
+  h1 {
+    color: #009de1;
+    font-family: 'Montserrat', sans-serif;
+  }
+  a.btn:not(:disabled):not(.disabled) {
+    cursor: pointer;
+  }
+  a.btn{
+    background: #009de1;
+    color: #fff;
+    margin-top: 12px;
+    display: inline-block;
+    font-size: 20px;
+    border-radius: 30px;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    transition:0.7s;
+    width:200px;
+  }
+  a.btn:hover{
+    background:#152B61;
+
+  }
+</style>
+<br>
+<br>
+
+<div class="jumbotron" style="margin-bottom:0px;">
+  <h1 class="display-4" style="text-align:center;">Hello Admin</h1>
+  <p class="lead">Welcome to EHospital.</p>
+  <hr class="my-4">
+  <p>Access various features after Login/SignUp.</p>
+  <p class="lead">
+    <a class="btn btn-primary btn-lg" href="/adminsignup" role="button">SignUp</a>
+    <a class="btn btn-primary btn-lg" href="/adminlogin" role="button">Login</a>
+  </p>
+</div>
+
+{% endblock content %}
